@@ -225,7 +225,7 @@ jobs:
           jq -r '.components[] | "- \(.name) \(.version) → \(.licenses[0].license.id // "Unknown")"' sarif-input/sbom-cyclonedx.json/bom.json >> $GITHUB_STEP_SUMMARY
 
 
-          name: Workflow Scan
+      name: Workflow Scan
 
 on:
   workflow_dispatch:
